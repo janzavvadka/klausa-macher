@@ -1,9 +1,32 @@
 {
   "hosting": {
     "public": "public",
-    "rewrites": [{
-      "source": "/timestamp",
-      "function": "app"
-    }]
+    "rewrites": [
+      {
+        "source": "/",
+        "function": "app"
+      },
+      {
+        "source": "/heart-beat",
+        "function": "app"
+      },
+      {
+        "source": "/auth",
+        "function": "app"
+      },
+      {
+        "source": "/result",
+        "function": "app"
+      },
+      {
+        "source": "/csv-form",
+        "function": "app"
+      }
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
   }
 }

@@ -1,10 +1,34 @@
 const functions = require('firebase-functions');
 const express = require('express');
-const app = express();
+const engines = require('consolidate'); 
 
-app.get('/timestamp', (request, response) => {
-    response.set('Cache-Control', '/public, max-age=10, s-mexage=20')
+const app = express();
+app.engine('hbs', engines.handlebars);
+app.set('views','./views');
+app.set('view engine', 'hbs');
+app.use(express.json());      
+app.use(express.urlencoded());
+
+app.get('/heart-beat', (request, response) => {
     response.send(`${Date.now()}`);
+});
+
+app.get('/', (request, response) => {
+    response.render('login', {test: 'wartość'})
+});
+
+app.post('/auth', (request, response) => {
+    var name = request.body.name;
+    console.log(name + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    response.send('result')
+});
+
+app.get('/csv-form', (request, response) => {
+    response.render('csv-form');
+});
+
+app.post('/csv-form', (request, response) => {
+    response.render('login')
 });
 
 exports.app = functions.https.onRequest(app); 
