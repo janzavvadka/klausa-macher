@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c067a37f_299bf64b",
+        "filename": "functions/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1017354
+      },
+      "writtenOn": "2019-11-30T15:39:58Z",
+      "side": 1,
+      "message": "takich rzeczy nie wolno robić!",
+      "range": {
+        "startLine": 5,
+        "startChar": 59,
+        "endLine": 5,
+        "endChar": 63
+      },
+      "revId": "ed01f8b1829679394ab7d00f45647b70bde69137",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3eef1e98_fe9bc6c8",
+        "filename": "functions/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1017354
+      },
+      "writtenOn": "2019-11-30T15:39:58Z",
+      "side": 1,
+      "message": "to jest logika kontrollera(app.get(\u0027/timestamp\u0027...))\nwięc pola powinny być lokalnie, w kontrolerze. \nGlobalny scope tylko dla bibliotek czy serwisów.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 88
+      },
+      "revId": "ed01f8b1829679394ab7d00f45647b70bde69137",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c577676_2d3fb18c",
+        "filename": "functions/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1017354
+      },
+      "writtenOn": "2019-11-30T15:39:58Z",
+      "side": 1,
+      "message": "polecam manipulacje czasem biblioteką moment, a nie bezpośrednio na obiekcie Data.\nJak dodać do express:\nhttps://dzone.com/articles/using-momentjs-in-nodejs\nMyślę, że na spokojnie mogę powiedzieć że to najpopularniejsza biblioteka na js-a.\ndokumentacja:\nhttps://momentjs.com/",
+      "range": {
+        "startLine": 9,
+        "startChar": 18,
+        "endLine": 9,
+        "endChar": 32
+      },
+      "revId": "ed01f8b1829679394ab7d00f45647b70bde69137",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
