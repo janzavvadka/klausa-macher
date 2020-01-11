@@ -1,9 +1,27 @@
 {
   "hosting": {
     "public": "public",
-    "rewrites": [{
-      "source": "/timestamp",
-      "function": "app"
-    }]
+    "rewrites": [
+      {
+        "source": "/live-check",
+        "function": "app"
+      },
+      {
+        "source": "/test-send-csv",
+        "function": "app"
+      },
+      {
+        "source": "/prod-send-csv",
+        "function": "app"
+      },
+      {
+        "source": "/test",
+        "function": "app"
+      },
+      {
+        "source": "/prod",
+        "function": "app"
+      }
+    ]
   }
 }
