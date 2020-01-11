@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "d332e10d_ad3451c3",
+        "filename": "functions/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1017354
+      },
+      "writtenOn": "2020-01-11T00:06:17Z",
+      "side": 1,
+      "message": "Jeśli stworzysz tutaj datę to ona będzie stała ba serwerze 😄",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 22
+      },
+      "revId": "ed01f8b1829679394ab7d00f45647b70bde69137",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c067a37f_299bf64b",
         "filename": "functions/index.js",
         "patchSetId": 1
